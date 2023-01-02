@@ -3,7 +3,7 @@ const root = document.querySelector(":root"),
 
 for(const input of inputs) {
 	input.onchange = e => {
-		root.style.setProperty("--theme-color", `var(--${value})`); // Broken by saying value is not defined
+		root.style.setProperty("--theme-color", `var(--${value})`);
 	}
 }
 

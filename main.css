@@ -11,8 +11,50 @@
 	--theme-color: var(--white);
 }
 
+html,body {
+	margin: 0;
+	padding: 0;
+}
+
 main {
 	margin: 0;
 	padding: 0;
 	background-color: rgba(var(--theme-color));
+}
+
+input:before {
+	--theme-colors: var(--white);
+}
+
+#page {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas:
+	"head head"
+	"nav nav"
+	"main  main"
+	"foot  foot";
+  grid-template-rows: 50px 1fr 130px;
+  grid-template-columns: 150px 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  background-color: #8ca0ff;
+}
+
+#page > nav {
+  grid-area: nav;
+  background-color: #ffa08c;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
 }
