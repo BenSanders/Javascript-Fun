@@ -1,0 +1,18 @@
+:root {
+	--white: 255, 255, 255;
+	--red: 229, 57, 53;
+	--orange: 251,148,0;
+	--yellow:253,216,53;
+	--green:67,160,71;
+	--blue:30,136,229;
+	--indigo:57,73,171;
+	--violet:156,39,176;
+	
+	--theme-color: var(--white);
+}
+
+main {
+	margin: 0;
+	padding: 0;
+	background-color: rgba(var(--theme-color));
+}
